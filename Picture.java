@@ -10,12 +10,15 @@
  * @version 7.0
  */
 public class Picture
+
 {
     private Square wall;
     private Square window;
     private Triangle roof;
     private Circle sun;
+    private Person person;
     private boolean drawn;
+    private int yPosition;
 
     /**
      * Constructor for objects of class Picture
@@ -26,6 +29,7 @@ public class Picture
         window = new Square();
         roof = new Triangle();  
         sun = new Circle();
+        person = new Person();
         drawn = false;
     }
 
@@ -56,6 +60,10 @@ public class Picture
             sun.moveVertical(-40);
             sun.changeSize(80);
             sun.makeVisible();
+            
+            person.moveHorizontal(250);
+            person.moveVertical(20);
+            person.makeVisible();
             drawn = true;
         }
     }
@@ -80,5 +88,14 @@ public class Picture
         window.changeColor("black");
         roof.changeColor("green");
         sun.changeColor("yellow");
+    }
+    
+    /**
+     * Move Circle down offscreen and move person to house
+     */
+    public void sunset()
+    {
+        sun.slowMoveVertical(300);
+        person.slowMoveHorizontal(-200);
     }
 }
