@@ -18,5 +18,13 @@ adds a class to those ones in "shapes". That class (named "Picture")
 uses the shapes to draw a picture. It can be used to experiment with 
 modifying source code.
 
-This project is for the first laboratory of my Programming 1 clas at Vanier.
-The previous sentence is for the assignment.
+QUESTIONS:
+
+Part 3:
+2. When moveDown is called, the object is moved a set amount of pixels. The makeInvisible method turns the visibility to false.
+6. If the color is not written in quotation marks the code will not recognize it and will not run.
+9. Yes. Instead of manually moving all the objects, a program could be written to automatically move each object to a set location.
+
+Part 4:
+14. I think the Picture class draws the picture by calling upon the other classes (i.e. Square, Triangle, etc.), and then moving them to the required location.
+
